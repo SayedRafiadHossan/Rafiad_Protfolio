@@ -33,8 +33,8 @@
                 <p>Hi There <span>!!</span></p>
                 <h1> I'm <span>Rafiad</span><br> I Am a <span> Web Developer</span></h1>
                 <div class="head-content">
-                    <p>I am a hardworking and ambitious individual with a great passion. I am currently in my Third year
-                        of studying Computer Science and Engineering at Daffodil International University. I have
+                    <p>I am a hardworking and ambitious individual with a great passion. Currently I hold a degree in
+                        Computer Science and Engineering from Daffodil International University. I have
                         excellent communication skills, enabling me to effectively communicate with a wide range of
                         people.</p>
                 </div>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Design: </span><br>HTML/HTML5, CSS/CSS3,Firebase,Tailwind, Bootstrap,
+                            <li><span>Web development: </span><br>HTML/HTML5, CSS/CSS3,Firebase,Tailwind, Bootstrap,
                                 JavaScript
                             </li>
                             <li><span>CMS: </span><br>WordPress/WooCommerce (Basic)</li>
@@ -94,12 +94,12 @@
                     </div>
                     <div class="tab-contents active-tab" id="education">
                         <ul>
-                            <li><span>Jan 2019 - Dec 2023</span><br> Bachelor in Computer Science and Engineering
+                            <li><span>Jan 2020 - Jan 2024</span><br> Bachelor in Computer Science and Engineering
                                 , Daffodil International University,
                                 Dhaka, Bangladesh </li>
-                            <li><span>Dec 2019 - Dec 2021</span><br> HSC in Science, Savar Govt Collage,
+                            <li><span>Jan 2017 - Dec 2019</span><br> HSC in Science, Savar Govt Collage,
                                 Savar, Dhaka </li>
-                            <li><span>Jan 2018 - Nov 2019</span><br>SSC in Science, Aced School, Savar,
+                            <li><span>Jan 2016 - Jan 2017</span><br>SSC in Science, Aced School, Savar,
                                 Dhaka</li>
                         </ul>
                     </div>
@@ -183,15 +183,16 @@
             </div>
             <div class="work-list">
                 <div class="work">
+                    <img src="images/prj_4.png">
+                    <p class="text"><a href="https://ephemeral-dolphin-628647.netlify.app" target="_blank"><span><i
+                                    class="fa-solid fa-link"></i></span>Panda</a></p>
+                </div>
+                <div class="work">
                     <img src="images/prj_5.png">
                     <p class="text"><a href="https://sportes-capturing.netlify.app" target="_blank"><span><i
                                     class="fa-solid fa-link"></i></span>Sports Capturing</a></p>
                 </div>
-                <div class="work">
-                    <img src="images/prj_4.png">
-                    <p class="text"><a href="https://ephemeral-dolphin-628647.netlify.app"><span><i
-                                    class="fa-solid fa-link">.</i></span>Panda</a></p>
-                </div>
+
                 <div class="work">
                     <img src="images/prj_6.png">
                     <p class="text"><a href="https://ephemeral-dolphin-628647.netlify.app" target="_blank"><span><i
@@ -223,7 +224,7 @@
                                 class="fa-brands fa-facebook"></i></a>
                         <a href="https://github.com/SayedRafiadHossan" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com/SayedRafiad" target="_blank"><i
+                        <a href="https://www.instagram.com/sayedrafiadhossen/" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/rafiad-hossan-815a4019b/" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
@@ -235,10 +236,11 @@
                 </div>
                 <div class="contact-right">
                     <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="h-btn btn-2">Submit</button>
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" onclick="SendEmail()" class="h-btn btn-2">Submit</button>
                     </form>
                 </div>
             </div>
@@ -251,6 +253,16 @@
 
 
     <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "aR49NIRGUMR_LlwKl",
+            });
+        })();
+    </script>
 </body>
 
 </html>
